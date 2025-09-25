@@ -14,7 +14,15 @@
   ],
   "env": {
     "MONGODB_URI": "@mongodb_uri",
+    "JWT_SECRET": "@jwt_secret",
     "ADMIN_KEY": "@admin_key",
+    "EMAIL_USER": "@email_user",
+    "EMAIL_PASS": "@email_pass",
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "server.js": {
+      "maxDuration": 30
+    }
   }
 }
